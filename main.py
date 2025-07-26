@@ -15,7 +15,7 @@ def get_direct_url():
             'quiet': True,
             'skip_download': True,
             'forceurl': True,
-            'format': 'best'
+            'format': 'bestvideo+bestaudio/best[ext=m3u8]'
         }
 
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
